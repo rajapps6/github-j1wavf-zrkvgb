@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { generatedata } from '../../assets/generatedata';
+import { generatedata } from 'src/assets/generatedata';
 
 @Component({
   selector: 'app-test2',

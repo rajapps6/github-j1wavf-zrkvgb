@@ -1,5 +1,5 @@
 import { Component, OnInit, AfterViewChecked } from '@angular/core';
-import { generatedata } from '../../assets/generatedata';
+import { generatedata } from 'src/assets/generatedata';
 
 @Component({
   selector: 'app-test1',

@@ -1,4 +1,7 @@
 import { Component, ViewEncapsulation, Input, ViewChild, AfterViewInit, ChangeDetectionStrategy, OnDestroy, ChangeDetectorRef } from '@angular/core';
+import { Subscription, interval, forkJoin } from 'rxjs';
+import { map, take } from 'rxjs/operators'
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-grid',
@@ -31,6 +34,10 @@ export class GridComponent {
 
   }
   ngAfterViewInit() {
+    console.log('grid')
     this.gridRef.createComponent(this.settings);
+  }
+  onChange(){
+    
   }
 }
